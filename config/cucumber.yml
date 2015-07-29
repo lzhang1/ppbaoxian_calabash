@@ -1,0 +1,6 @@
+# config/cucumber.yml
+##YAML Template
+---
+default: --profile test_report
+jenkins_report: --format pretty --format html --out=/var/www/html/jenkins.html
+test_report: --format pretty --format html --out=/var/www/html/test.html
