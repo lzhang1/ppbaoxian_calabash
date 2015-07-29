@@ -1,4 +1,4 @@
-Feature: Forget Password feature
+Feature: Setup feature
 
   Scenario Outline: Check Prompt for Setup 
 		Then I wait for 3 seconds
@@ -23,7 +23,7 @@ Feature: Forget Password feature
 		|18601334512|验证码已发送至您的手机，请注意查收|1234|123566|验证码错误|
 		|18601334512|验证码已发送至您的手机，请注意查收|1234||请输入密码|
 		|18601334512|验证码已发送至您的手机，请注意查收|1234|12345|密码格式不正确，请您输入6-16位字母和数字组合|
-		|18601334512|验证码已发送至您的手机，请注意查收|1234|12345678901234567|密码格式不正确，请您输入6-16位字母和数字组合|
+		|18601334512|验证码已发送至您的手机，请注意查收|1234|12345678901234567|验证码错误|
 
 	Scenario: Check PPdaba's Protocol
 		Then I wait for 3 seconds
