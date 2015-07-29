@@ -1,7 +1,7 @@
 Feature: Forget Password feature
 
   Scenario Outline: Check Prompt for forget password
-		Then I wait for 5 seconds
+		Then I wait for 3 seconds
 		When I press the "我的" textview
 		Then I see the text "登录/注册"
 		Given I press the "登录/注册" textview

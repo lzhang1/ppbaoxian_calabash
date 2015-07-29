@@ -1,7 +1,7 @@
 Feature: Forget Password feature
 
   Scenario Outline: Check Prompt for Setup 
-		Then I wait for 5 seconds
+		Then I wait for 3 seconds
 		When I press the "我的" textview
 		Then I see the text "登录/注册"
 		Given I press the "登录/注册" textview
@@ -26,11 +26,11 @@ Feature: Forget Password feature
 		|18601334512|验证码已发送至您的手机，请注意查收|1234|12345678901234567|密码格式不正确，请您输入6-16位字母和数字组合|
 
 	Scenario: Check PPdaba's Protocol
-		Then I wait for 5 seconds
+		Then I wait for 3 seconds
 		When I press the "我的" textview
 		Then I see the text "登录/注册"
 		Given I press the "登录/注册" textview
 		And I touch the "注册" text
 		Given I touch the "《PP大巴服务协议》" text
-		Given I scroll "down" 20 times
+		Given I scroll "down" 25 times
 		Given I scroll "up" 10 times

@@ -1,7 +1,7 @@
 Feature: Login feature
 
-  Scenario Outline: Login Successfully
-		Then I wait for 5 seconds
+  Scenario Outline: Login Prompt Check
+		Then I wait for 3 seconds
 		When I press the "我的" textview
 		Then I see the text "登录/注册"
 		Given I press the "登录/注册" textview
@@ -18,13 +18,14 @@ Feature: Login feature
 		|18516891935||请输入密码|
 		|18516891935|qatest1|账号密码不匹配|
 
+	@login
   Scenario: Login Successfully
-    Then I wait for 5 seconds
+    Then I wait for 3 seconds
 		When I press the "我的" textview
 		Then I see the text "登录/注册"
 		Given I press the "登录/注册" textview
-		When I enter text "18516891935" into field with id "user_name"
+		When I enter text "13366443852" into field with id "user_name"
 		And I enter text "qatest11" into field with id "user_pwd"
 		And I press view with id "login"
 		And I wait for 3 seconds
-		Then I see the text "185****1935"
+		Then I see the text "133****3852"
