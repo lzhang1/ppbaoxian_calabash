@@ -1,4 +1,4 @@
-Feature: Forget Password feature
+Feature: Share feature
 
   Scenario: Check Share To Friends
 		Then I wait for 3 seconds

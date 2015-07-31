@@ -5,7 +5,7 @@ Feature: Ticket feature
 		When I press the "凭证" textview
 		Then I see the text "您尚未登录，请点击^_^"
 		When I press the "您尚未登录，请点击^_^" textview
-		When I enter text "13366443852" into field with id "user_name"
+		When I enter text "18611054037" into field with id "user_name"
 		And I enter text "qatest" into field with id "user_pwd"
 		And I press view with id "login"
 		And I wait for 3 seconds
