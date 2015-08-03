@@ -18,6 +18,9 @@ Feature: Order feature
 		And I wait for 3 seconds
 		Then I see the text "186****4037"
 		Given I press the "我的订单" textview
-		Then I see the text "您尚未预订，快快行动吧！"
+		Then All the below info should display:
+			|订单编号|
+			|订单时间|
+			|实付款|
 		When I go back
 		Then I see the text "186****4037"
