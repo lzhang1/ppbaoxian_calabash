@@ -8,9 +8,8 @@ Feature: Share feature
 		When I press view with id "share_more"
 		Then I see the text "PP大巴"
 		Given I go back
-		Given I press the "分享给好友" textview
-		When I press view with id "share_wetchat_timeline"
-		Then I see the text "没有安装微信客户端"
-		Given I press the "分享给好友" textview
-		When I press view with id "share_wetchat"
-		Then I see the text "没有安装微信客户端"
+		When I press the "分享给好友" textview
+		Then All the below info should display:
+			|微信好友|
+			|朋友圈|
+			|更多|
