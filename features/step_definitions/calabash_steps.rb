@@ -56,3 +56,7 @@ Then /^I check coupon with text "([^\"]*)"$/ do |text|
 		tap_when_element_exists("android.widget.ImageView id:'button_bar_left'",timeout:5)	
 	end
 end
+Then /^I should see the content "([^\"]*)"$/ do |content|
+	element_exists("* {contentDescription CONTAINS[c] '#{content}'}")
+end
+

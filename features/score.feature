@@ -5,4 +5,4 @@ Feature: Score feature
 		When I press the "我的" textview
 		Then I see the text "赏个分儿"
 		Given I press the "赏个分儿" textview
-		Then I see the text "选择要使用的应用："
+		Then I take a picture
