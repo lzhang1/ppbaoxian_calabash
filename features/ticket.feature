@@ -30,11 +30,7 @@ Feature: Ticket feature
 		Then All the below info should display:
 			|微信好友|
 			|朋友圈|
-		When I press view with id "share_wetchat"
-		Then I see the text "没有安装微信客户端"
-		When I press the "发送给好友10元" textview
-		And I press view with id "share_wetchat_timeline"
-		Then I see the text "没有安装微信客户端"
+		Then I go back
 		When I press the "发送给好友10元" textview
 		And I press the "取消" textview
 		Then I see the text "发送给好友10元"
