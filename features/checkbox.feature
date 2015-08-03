@@ -22,4 +22,4 @@ Feature: Checkbox feature
 		And I try to check all the date
 		Then I check coupon with text "暂无可用优惠券"
 		When I press the "确认并支付" textview
-		Then I see the text "没有安装微信客户端"		
+		Then I don't see the text "确认并支付"		
