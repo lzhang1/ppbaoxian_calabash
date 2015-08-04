@@ -3,31 +3,38 @@ Feature: Route feature
   Scenario: Check Route
 		Then I wait for 3 seconds
 		When I press the "线路" textview
-		Then I see the text "查看凭证"
-		When I press "晚班车"
-		Then I see the text "国风北京、望京SOHO、爱立信大厦、康静里、单店、东坝南、朝新嘉园、金泰丽富嘉园、奥体花园北门"
-		When I press "早班车"
-		Then I see the text "望都家园、北京洋房、燕城苑、三区北门、一区东门、街心花园、启明大厦、爱立信大厦、望京SOHO"
-		When I press the "查看凭证" textview
-		Then I see the text "登录才能查看凭证哦"
-
-		When I press the "我的" textview
-		Then I see the text "登录/注册"
-		Given I press the "登录/注册" textview
-		When I enter text "18611054037" into field with id "user_name"
-		And I enter text "qatest" into field with id "user_pwd"
-		And I press view with id "login"
-		And I wait for 3 seconds
-		Then I see the text "186****4037"
-		When I press the "线路" textview
-		When I press the "查看凭证" textview
-		Then I see the text "大巴已待命，预订即出发"
-		When I press view with id "button_bar_right"
 		Then All the below info should display:
-			|微信好友|
-			|朋友圈|
-			|更多|
-		When I press the "取消" textview
-		Then I see the text "大巴已待命，预订即出发"
-		When I press view with id "button_bar_left"
-		Then I see the text "查看凭证"
+			|PP大巴|
+			|查看凭证|
+			|全部线路|
+			|大巴租赁|
+		When I press the "全部线路" textview
+		Then I see the text "区域"
+		When I press view with id "tab_left_text"
+		Then All the below info should display:
+			|早上发车|
+			|晚上发车|
+		When I press the "早上发车" textview
+		Then I see the text "四惠、望京SOHO"
+		When I press the "早班车" textview
+		When I press the "晚上发车" textview
+		Then All the below info should display:
+			|晚班车|
+		  |望京SOHO、四惠|
+		When I press the "区域" textview
+		Then All the below info should display:
+			|全部|
+			|海淀|
+			|朝阳|
+			|清河|
+			|西三旗|
+		When I press the "海淀" textview
+		And I press the text "全部" with id 1
+		Then I see the text "海淀"
+		When I press the "海淀" textview
+		And I press the text "全部" with id 0
+		And I press the text "全部" with id 1
+		Then I see the text "区域"
+		When I press the "区域" textview
+		And I press the "清河" textview
+		Then I see the text "清河"

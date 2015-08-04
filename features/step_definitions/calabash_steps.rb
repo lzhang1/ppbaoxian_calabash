@@ -60,3 +60,7 @@ Then /^I should see the content "([^\"]*)"$/ do |content|
 	element_exists("* {contentDescription CONTAINS[c] '#{content}'}")
 end
 
+When /^I press the text "([^\"]*)" with id (\d+)$/ do |text, id|
+		touch(query("android.widget.TextView text:'#{text}'")[id.to_i])
+end
+
