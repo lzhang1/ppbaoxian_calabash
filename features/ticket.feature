@@ -1,6 +1,6 @@
 Feature: Ticket feature
 
-  Scenario: Check Ticket
+  Scenario: Check Ticket Page
 		Then I wait for 3 seconds
 		When I press the "凭证" textview
 		Then I see the text "您尚未登录，请点击^_^"
@@ -8,9 +8,7 @@ Feature: Ticket feature
 		When I enter text "18611054037" into field with id "user_name"
 		And I enter text "qatest" into field with id "user_pwd"
 		And I press view with id "login"
-		And I wait for 3 seconds
-		Then I see the text "大巴已待命，预订即出发"
-		And I should not see "您尚未登录，请点击^_^"
+		Then I wait for 3 seconds
 		When I press view with id "ticket_ad" 
 		Then All the below info should display: 
 			|发送给好友10元|
@@ -35,4 +33,21 @@ Feature: Ticket feature
 		And I press the "取消" textview
 		Then I see the text "发送给好友10元"
 		When I press the "返回" textview
-		Then I see the text "大巴已待命，预订即出发"
+		Then I see the text "凭证"
+	
+	Scenario: Check Ticket List
+		Then I wait for 3 seconds
+		When I press the "凭证" textview
+		Then I see the text "您尚未登录，请点击^_^"
+		When I press the "您尚未登录，请点击^_^" textview
+		When I enter text "18611054037" into field with id "user_name"
+		And I enter text "qatest" into field with id "user_pwd"
+		And I press view with id "login"
+		And I wait for 3 seconds
+		Then I should not see "您尚未登录，请点击^_^"
+		When I press view with id "ticket_line_start"
+		Then I see the text "凭证详情"
+		When I go back
+		Then I see the text "群二维码"
+		When I press the "群二维码" textview
+		Then I see the text "查看图片"
