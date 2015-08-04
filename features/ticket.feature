@@ -36,7 +36,7 @@ Feature: Ticket feature
 		Then I see the text "凭证"
 	
 	Scenario: Check Ticket List
-		Then I wait for 3 seconds
+		Then I wait for 5 seconds
 		When I press the "凭证" textview
 		Then I see the text "您尚未登录，请点击^_^"
 		When I press the "您尚未登录，请点击^_^" textview
