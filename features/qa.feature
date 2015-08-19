@@ -1,7 +1,7 @@
 Feature: Question and Answer feature
 
   Scenario: Check Question and Answer
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		Then I see the text "常见问题"
 		Given I press the "常见问题" textview

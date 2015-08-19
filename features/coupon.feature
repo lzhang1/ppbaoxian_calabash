@@ -1,7 +1,7 @@
 Feature: Coupon feature
 
   Scenario: Check Coupon Without Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		Then I see the text "代金券"
 		Given I press the "代金券" textview
@@ -9,7 +9,7 @@ Feature: Coupon feature
 
 
 	Scenario: Check Coupon After Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		And I press the "登录/注册" textview
 		When I enter text "18611054037" into field with id "user_name"

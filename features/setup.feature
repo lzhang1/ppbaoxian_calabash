@@ -1,7 +1,7 @@
 Feature: Setup feature
 
   Scenario Outline: Check Prompt for Setup 
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		Then I see the text "登录/注册"
 		Given I press the "登录/注册" textview
@@ -26,7 +26,7 @@ Feature: Setup feature
 		|18601334512|验证码已发送至您的手机，请注意查收|1234|12345678901234567|验证码错误|
 
 	Scenario: Check PPdaba's Protocol
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		Then I see the text "登录/注册"
 		Given I press the "登录/注册" textview

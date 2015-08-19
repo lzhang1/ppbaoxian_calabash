@@ -1,7 +1,7 @@
 Feature: Route feature
 
   Scenario: Check Route
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "线路" textview
 		Then All the below info should display:
 			|PP大巴|

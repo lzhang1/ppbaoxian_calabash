@@ -1,14 +1,14 @@
 Feature: Check Corporation feature
 
   Scenario: Check Corporation Verify Prompt Without Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		Then I see the text "+验证"
 		Given I press the "+验证" textview
 		Then I see the text "请先登录才能进行企业客户认证"
 
   Scenario: Check Corporation Verify Prompt After Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		Then I see the text "登录/注册"
 		Given I press the "+验证" textview

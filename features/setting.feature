@@ -1,7 +1,7 @@
 Feature: Setting feature
 
   Scenario: Check Setting
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		And I scroll down
 		Then I see the text "设置"
@@ -29,7 +29,7 @@ Feature: Setting feature
 		Then I should see text containing "易出行（北京）科技有限责任公司"
 
 	Scenario: Change Password After Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		And I press the "登录/注册" textview
 		When I enter text "18611054037" into field with id "user_name"

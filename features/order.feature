@@ -1,7 +1,7 @@
 Feature: Order feature
 
   Scenario: Check Order Without Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		Then I see the text "我的订单"
 		Given I press the "我的订单" textview
@@ -9,7 +9,7 @@ Feature: Order feature
 
 
 	Scenario: Check Order After Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		And I press the "登录/注册" textview
 		When I enter text "18611054037" into field with id "user_name"

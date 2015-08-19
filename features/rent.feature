@@ -1,7 +1,7 @@
 Feature: Rent feature
 
   Scenario: Check Rent
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "线路" textview
 		Then All the below info should display:
 			|全部线路|

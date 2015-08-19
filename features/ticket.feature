@@ -1,14 +1,14 @@
 Feature: Ticket feature
 
   Scenario: Check Ticket Page
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "凭证" textview
 		Then I see the text "您尚未登录，请点击^_^"
 		When I press the "您尚未登录，请点击^_^" textview
 		When I enter text "18611054037" into field with id "user_name"
 		And I enter text "qatest" into field with id "user_pwd"
 		And I press view with id "login"
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press view with id "ticket_ad" 
 		Then All the below info should display: 
 			|发送给好友10元|

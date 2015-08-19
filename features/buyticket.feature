@@ -1,7 +1,7 @@
 Feature: Buy Ticket feature
 
   Scenario: Check Buy Ticket
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "线路" textview
 		Then I see the text "查看凭证"
 

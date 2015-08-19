@@ -1,7 +1,7 @@
 Feature: Profile feature
 
   Scenario: Check Profile Without Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		Then I see the text "登录/注册"
 		Given I press view with id "personal_phone"
@@ -9,7 +9,7 @@ Feature: Profile feature
 
 
 	Scenario: Check Profile After Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		And I press the "登录/注册" textview
 		When I enter text "18611054037" into field with id "user_name"

@@ -1,7 +1,7 @@
 Feature: Vote feature
 
   Scenario: Check Vote Without Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "定制" textview
 		Then All the below info should display:
 			|线路定制|
@@ -13,7 +13,7 @@ Feature: Vote feature
 
 
 	Scenario: Check Vote After Login
-		Then I wait for 3 seconds
+		Then I wait for 4 seconds
 		When I press the "我的" textview
 		And I press the "登录/注册" textview
 		When I enter text "18611054037" into field with id "user_name"
