@@ -8,3 +8,4 @@ Feature: Login
 		And I press the "登录" textview
 		Then I see the text "请输入正确的手机号码"
 		And I see the text "我知道了"
+		Then I press the "我知道了" textview
