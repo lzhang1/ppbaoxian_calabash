@@ -1,2 +1,2 @@
-# ppdaba_calabash
-This is acceptance testing for PPdaba app on Android platform
+# ppbaoxian_calabash
+This is acceptance testing for PPbaoxian app on Android platform
