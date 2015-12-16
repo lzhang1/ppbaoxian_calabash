@@ -1,0 +1,21 @@
+reinstall_apps
+ls -l 
+exit
+reinstall_apps
+reinstall_apps
+exit
+reinstall_apps
+exit
+reinstall_apps
+require 'calabash-android'
+require 'calabash_android'
+exit
+require 'operations'
+exit
+version
+self
+exit
+reinstall_apps
+exit
+reinstall_apps
+exit

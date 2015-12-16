@@ -1,4 +1,5 @@
-app-debug.apk
+app-*.apk
 run.sh
 screenshot*
 test_servers
+debug.keystore
